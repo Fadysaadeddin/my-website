@@ -1,0 +1,342 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* the start of the container 1 */ 
+#container{
+    background: black;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+
+}
+.logo{
+    width: 40px;
+
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight:600;
+    text-transform: capitalize;
+    
+}
+ul li a:hover{
+    color:rgb(145, 90, 90) ;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin:auto;
+   
+  
+}
+.content .text{
+    
+    width: 40%;
+
+    color: white;
+
+}
+
+.content .text h2{
+    font-size: 40px;
+    text-transform: uppercase;
+  
+
+}
+.content .text p{
+    font-size: 18px;
+    margin: 20px 0;
+
+}
+ .text a{
+    text-decoration: none;
+    background: white;
+    font-weight: 600;
+    color: black;
+    padding: 8px 10px;
+    border-radius: 20px;
+    font-size: 15px;
+   
+    
+}
+.content .text a:hover{
+background:rgb(145, 90, 90) ;
+}
+.content .images{
+    width: 30%;
+}
+.content .images img{
+    width: 250px;
+    margin-top: 10px;
+}
+
+
+/* the phones images   */ 
+
+#icons{
+    position: absolute;
+    bottom: 20px;
+    left: 30%;
+}
+#icons img{
+    width: 40px;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-right: 20px;
+}
+#icons img:hover{
+   transform: scale(1.2);
+}
+
+
+/* start of the section in the middle of the page */ 
+
+
+.sec{
+    width:100%;
+    height:100px;
+    background-color: rgba(36, 40, 41, 0.712);
+    display: flex;
+   
+}
+.content1{
+    width: 90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+  
+}
+
+.sec p{
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+   
+
+}
+#btn{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    background:white;
+    color:black;
+    border-radius: 20px;
+    text-transform: capitalize;
+
+}
+#btn:hover{
+background-color:rgb(145, 90, 90) ;
+cursor: pointer;
+}
+
+
+#btnscroll{
+    background-color: rgb(156, 182, 182);
+    font-weight: bold;
+    padding: 15px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 20px;
+    display: none;
+    border: none;
+}
+
+/*the start of the container 2  */ 
+
+
+#container2{
+    height: 100%;
+    width: 100%;
+    background:linear-gradient( to bottom , black , rgb(155, 26, 26));
+    
+}
+ div.product{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin:auto
+}
+ div.text1{
+    color: white;
+    width: 70%;
+
+}
+
+#container2 img{
+    width: 180px;
+    margin-top: 100px;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+#container2 img:hover{
+    transform: scale(1.2);
+}
+#container2 h2{
+    font-size: 20px;
+    padding-bottom: 4px;
+    margin-top: 100px;
+    text-align: left;
+    text-transform: capitalize;
+
+}
+#container2 p{
+    padding:5px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-align:left;
+}
+
+/* the start of the footer   */ 
+
+
+.change{
+    width: 100%;
+    height:250px;
+    background: rgb(139, 129, 129);
+   display:inline-flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.change input{
+    font-size: 20px;
+    text-align: center;
+    border: solid;
+    padding: 4px;
+    display: block;
+    margin:10px
+}
+.change p{
+    font-size: 30px;
+    font-weight: bold;  
+}
+
+/* the resposive process in 3 sizes */ 
+
+
+@media (max-width: 949px){
+
+
+    .content .images img{
+        width: 150px;  
+        margin-top: 50px;
+    }
+
+        .content .text h2{
+            font-size: 30px;
+            margin-top: 50px;}
+
+          
+            .sec p{
+                font-size: 22px;}
+                #btn{
+                    font-size: 15px;}
+
+
+                    #container2 h2{
+                        font-size: 20px;}
+
+                        #container2 p{
+                          
+                            font-size: 15px;}
+
+                            #container2 img{
+                                width: 130px;}
+
+                                #btnscroll{
+                                    padding: 10px;}
+}
+
+
+
+
+
+@media (max-width: 573px){
+    .content .images img{
+        width: 100px;  
+    }
+    
+        .content .text h2{
+            font-size: 20px;}
+             
+            ul li a{
+                font-size: 14px;}
+                
+                .logo{
+                    width: 30px;}
+                    .content .text h2{
+                        margin-top: 100px;}
+
+                        #icons{
+                            left:20%;
+                        }
+                        #icons img{
+                            width: 30px;}
+
+                        .sec p{
+                            font-size: 16px;}
+                            #btn{
+                                font-size: 12px;}
+
+                                #container2 img{
+                                    width: 100px;}
+
+                                    .change input{
+                                        font-size: 15px;}
+}
+
+
+
+
+
+
+@media (max-width:430px){
+ header{
+    width:100%;
+margin-top: 10px;
+}
+
+ p{
+    font-size: 13px;}
+    #btn{
+        font-size: 9px;}
+
+        #container2 h2{
+            font-size: 15px;}
+
+            #container2 p{
+              
+                font-size: 15px;}
+
+                #container2 img{
+                    width: 100px;}
+                    .content{
+                        transform: translate( 0 , -50px);
+                    }
+
+ }
